@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../cpu.srcs/sources_1/new/ALU.v" \
+"../../../../cpu.srcs/sources_1/new/DECODER.v" \
+"../../../../cpu.srcs/sources_1/new/DM.v" \
+"../../../../cpu.srcs/sources_1/new/DMF.v" \
+"../../../../cpu.srcs/sources_1/new/DM_control.v" \
+"../../../../cpu.srcs/sources_1/new/DR_ext.v" \
+"../../../../cpu.srcs/sources_1/new/EX.v" \
+"../../../../cpu.srcs/sources_1/new/EX_control.v" \
+"../../../../cpu.srcs/sources_1/new/GPR.v" \
+"../../../../cpu.srcs/sources_1/new/ID.v" \
+"../../../../cpu.srcs/sources_1/new/ID_control.v" \
+"../../../../cpu.srcs/sources_1/new/IF.v" \
+"../../../../cpu.srcs/sources_1/new/IM.v" \
+"../../../../cpu.srcs/sources_1/new/MUX.v" \
+"../../../../cpu.srcs/sources_1/new/Mult_A_Div.v" \
+"../../../../cpu.srcs/sources_1/new/PC.v" \
+"../../../../cpu.srcs/sources_1/new/WB.v" \
+"../../../../cpu.srcs/sources_1/new/WB_control.v" \
+"../../../../cpu.srcs/sources_1/new/Wreg_DM_RF.v" \
+"../../../../cpu.srcs/sources_1/new/forward_control.v" \
+"../../../../cpu.srcs/sources_1/new/hazard_decoder.v" \
+"../../../../cpu.srcs/sources_1/new/hazard_decoder_spford.v" \
+"../../../../cpu.srcs/sources_1/new/mips.v" \
+"../../../../cpu.srcs/sources_1/new/reg_EX_DM.v" \
+"../../../../cpu.srcs/sources_1/new/reg_ID_EX.v" \
+"../../../../cpu.srcs/sources_1/new/reg_IF_to_ID.v" \
+"../../../../cpu.srcs/sources_1/new/stall_control.v" \
+"../../../../cpu.srcs/sim_1/new/test.tb" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

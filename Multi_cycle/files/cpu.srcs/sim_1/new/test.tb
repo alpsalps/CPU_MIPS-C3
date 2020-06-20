@@ -1,0 +1,58 @@
+`timescale 1ns / 1ps
+module test;
+
+    reg clk; 
+    reg reset;
+  
+    wire [31:0] dmm,d1,d2,d3;
+    wire [31:0] pcc,npcc,ir;// = 'h00003000; //== 'h00003000;
+    //assign pcc = run.NPC;
+    //wire [31:0] imm[1023:0];
+    //assign npcc = run.PC4_in_D;
+    assign dmm = run.pipeline_DM.DMF_D.dm_grf[0];
+    
+    assign d1 = run.pipeline_DM.DMF_D.dm_grf[1];
+    
+    assign d2 = run.pipeline_DM.DMF_D.dm_grf[2];
+    
+    assign d3 = run.pipeline_DM.DMF_D.dm_grf[3];
+    
+    
+    
+    
+    
+    
+    wire [11:2] addre;
+    //assign addre = run.im.addr;
+  //  wire [3:0] si = run.NPC_CS;
+    //assign ir = run.IR;
+    
+    
+    
+    
+    
+    
+     mips run(
+        .clk(clk),
+        .reset(reset)
+    );
+   
+    initial 
+        begin 
+            clk = 0;
+            reset = 0;
+            
+            #0.02
+            reset <= 1;
+        end
+        
+        always 
+            begin 
+            #0.01
+            clk = ~clk;
+            reset = 0;
+            end
+
+
+
+endmodule

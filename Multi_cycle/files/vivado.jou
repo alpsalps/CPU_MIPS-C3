@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Jan 19 11:52:23 2020
+# Process ID: 20336
+# Current directory: C:/Users/38473/Desktop/cpu_50
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10364 C:\Users\38473\Desktop\cpu_50\cpu.xpr
+# Log file: C:/Users/38473/Desktop/cpu_50/vivado.log
+# Journal file: C:/Users/38473/Desktop/cpu_50\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/38473/Desktop/cpu_50/cpu.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source test.tcl
